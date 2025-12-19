@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SHOPIO</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="bg-dark text-warning py-3 px-4 d-flex justify-content-between align-items-center w-100">
+    <h4 class="m-0 pl-3">SHOPIO</h4>
+    <nav class="d-flex">
+      <a href="#electronics" class="text-white px-3">Electronics</a>
+      <a href="#fashion" class="text-white px-3">Fashion</a>
+      <a href="#lifestyle" class="text-white px-3">Lifestyle</a>
+      <a href="#healthcare" class="text-white px-3">Healthcare</a>
+    </nav>
+  </header>
+
+  <!-- Electronics -->
+  <div id="electronics" class="bg-light py-3">
+    <h1 class="text-center text-dark">Electronics</h1>
+    <section class="d-flex justify-content-between flex-wrap mx-3 pb-3">
+      <!-- Product 1 -->
+      <div class="card mb-3" style="width: 18rem;">
+        <img src="./assests/electronics1.jpg" class="card-img-top" alt="Wireless Keyboard" height="200">
+        <div class="card-body">
+          <h5 class="card-title">Wireless Keyboard</h5>
+          <h6 class="card-text text-success">&#8377;1,499</h6>
+          <p class="card-text">Enjoy seamless typing with this ergonomic Bluetooth keyboard featuring a rechargeable
+                  battery</p>
+          <div class="btn-grp">
+            <a href="#" class="btn btn-warning">Add to cart</a>
+            <button class="btn btn-success" data-toggle="modal" data-target="#keyboardModal">Know
+              More</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal with Carousel -->
+      <div class="modal fade" id="keyboardModal" data-backdrop="static">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header bg-warning text-dark">
+              <h5 class="modal-title" id="electronics2">Wireless Keyboard</h5>
+            </div>
+
+            <div class="modal-body scrollable">
+              <!-- Carousel inside Modal -->
+              <div id="Celectronics2" class="carousel slide mb-3 carousel-fade" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#Celectronics2" data-slide-to="0" class="active"></li>
+                  <li data-target="#Celectronics2" data-slide-to="1"></li>
+                  <li data-target="#Celectronics2" data-slide-to="2"></li>
+                </ol>
+
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-interval="3000">
+                    <img src="./assests/electronics1.jpg" class="d-block w-100 rounded" width="400px" height="350px">
+                  </div>
+                  <div class="carousel-item" data-interval="3000">
+                    <img src="./assests/keyboard2.jpg" class="d-block w-100 rounded" width="400px" height="350px">
+                  </div>
+                  <div class="carousel-item" data-interval="3000">
+                    <img src="./assests/keyboard2.webp" class="d-block w-100 rounded" width="400px" height="350px">
+                  </div>
+                </div>
+
+                <a class="carousel-control-prev" href="#Celectronics1" data-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#Celectronics1" data-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+
+              <!-- Product Details -->
+              <div class="text-center">
+                <p>Enjoy seamless typing with this ergonomic Bluetooth keyboard featuring a rechargeable battery, fast
+                  pairing, and silent keys. Perfect for work or travel.</p>
+                <hr>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt impedit magnam ipsum quisquam
+                  soluta commodi. Nihil sequi exercitationem hic fugiat natus amet illo iusto? Culpa impedit
+                  consectetur, iusto magni veniam incidunt atque ullam molestias ex, amet voluptatum obcaecati fugiat
+                  dolorum velit sit hic! Minus nihil quibusdam nulla! Incidunt, doloremque aliquam.
+                </p>
+              </div>
+            </div>
+            <!-- Modal-footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Product 2 -->
+       <div class="card mb-3" style="width: 18rem;">
+        <img src="./assests/electronics2.jpg" class="card-img-top" height="200">
+        <div class="+card-body">
+         <h5 class="card-title">UltraView Smartwatch</h5>
+                    <h6 class="card-text text-success">&#8377;2,999</h6>
+                    <p class="card-text">Track fitness, heart rate, and notifications with an elegant AMOLED display
+                        smartwatch.
+                    </p>
+          <div class="btn-grp">
+            <a href="#" class="btn btn-warning">Add to cart</a>
+            <button class="btn btn-success" data-toggle="modal" data-target="#watchModal">Know
+              More</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal with Carousel -->
+      <div class="modal fade" id="watchModal" data-backdrop="static">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header bg-warning text-dark">
+              <h5 class="modal-title" id="electronics2">UltraView Smartwatch</h5>
+            </div>
+
+            <div class="modal-body scrollable">
+              <!-- Carousel inside Modal -->
+              <div id="Celectronics2" class="carousel slide mb-3 carousel-fade" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#Celectronics2" data-slide-to="0" class="active"></li>
+                  <li data-target="#Celectronics2" data-slide-to="1"></li>
+                  <li data-target="#Celectronics2" data-slide-to="2"></li>
+                </ol>
+
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-interval="3000">
+                    <img src="./assests/watch.webp" class="d-block w-100 rounded" width="400px" height="350px">
+                  </div>
+                  <div class="carousel-item" data-interval="3000">
+                    <img src="./assests/watch1.jpg" class="d-block w-100 rounded" width="400px" height="350px">
+                  </div>
+                  <div class="carousel-item" data-interval="3000">
+                    <img src="./assests/watch2.jpg" class="d-block w-100 rounded" width="400px" height="350px">
+                  </div>
+                </div>
+
+                <a class="carousel-control-prev" href="#Celectronics2" data-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#Celectronics2" data-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+
+              <!-- Product Details -->
+              <div class="text-center">
+                <p>ETrack fitness, heart rate, and notifications with an elegant AMOLED display
+                        smartwatch. Perfect for work or travel.</p>
+                <hr>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt impedit magnam ipsum quisquam
+                  soluta commodi. Nihil sequi exercitationem hic fugiat natus amet illo iusto? Culpa impedit
+                  consectetur, iusto magni veniam incidunt atque ullam molestias ex, amet voluptatum obcaecati fugiat
+                  dolorum velit sit hic! Minus nihil quibusdam nulla! Incidunt, doloremque aliquam.
+                </p>
+              </div>
+            </div>
+            <!-- Modal-footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+       <div class="card mb-3" style="width: 18rem;">
+        <img src="./assests/electronics3.jpg" class="card-img-top" height="200">
+        <div class="card-body">
+          <h5 class="card-title">LED Projector</h5>
+                    <h6 class="card-text text-success">&#8377;6,499</h6>
+                    <p class="card-text">Enjoy theatre-like visuals at home with HD projection, HDMI support, and
+                        long-lasting
+                        lamp life.</p>
+          <div class="btn-grp">
+            <a href="#" class="btn btn-warning">Add to cart</a>
+            <button class="btn btn-success" data-toggle="modal" data-target="#projectorModal">Know
+              More</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal with Carousel -->
+      <div class="modal fade" id="projectorModal" data-backdrop="static">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header bg-warning text-dark">
+              <h5 class="modal-title" id="electronics2">Wireless Keyboard</h5>
+            </div>
+
+            <div class="modal-body scrollable">
+              <!-- Carousel inside Modal -->
+              <div id="Celectronics3" class="carousel slide mb-3 carousel-fade" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#Celectronics3" data-slide-to="0" class="active"></li>
+                  <li data-target="#Celectronics3" data-slide-to="1"></li>
+                  <li data-target="#Celectronics3" data-slide-to="2"></li>
+                </ol>
+
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-interval="3000">
+                    <img src="./assests/electronics2.jpg" class="d-block w-100 rounded" width="400px" height="350px">
+                  </div>
+                  <div class="carousel-item" data-interval="3000">
+                    <img src="./assests/keyboard2.jpg" class="d-block w-100 rounded" width="400px" height="350px">
+                  </div>
+                  <div class="carousel-item" data-interval="3000">
+                    <img src="./assests/keyboard2.webp" class="d-block w-100 rounded" width="400px" height="350px">
+                  </div>
+                </div>
+
+                <a class="carousel-control-prev" href="#Celectronics3" data-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#Celectronics3" data-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+
+              <!-- Product Details -->
+              <div class="text-center">
+                <p>Enjoy theatre-like visuals at home with HD projection, HDMI support, and
+                        long-lasting
+                        lamp life. Perfect for work or travel.</p>
+                <hr>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt impedit magnam ipsum quisquam
+                  soluta commodi. Nihil sequi exercitationem hic fugiat natus amet illo iusto? Culpa impedit
+                  consectetur, iusto magni veniam incidunt atque ullam molestias ex, amet voluptatum obcaecati fugiat
+                  dolorum velit sit hic! Minus nihil quibusdam nulla! Incidunt, doloremque aliquam.
+                </p>
+              </div>
+            </div>
+            <!-- Modal-footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Product 4 -->
+       <div class="card mb-3" style="width: 18rem;">
+        <img src="./assests/electronics4.jpg" class="card-img-top" alt="Wireless Keyboard" height="200">
+        <div class="card-body">
+          <h5 class="card-title">Wireless Mouse</h5>
+                    <h6 class="card-text text-success">&#8377;799</h6>
+                    <p class="card-text">Lightweight and silent-click wireless mouse with precise optical tracking and
+                        USB
+                        receiver.</p>
+          <div class="btn-grp">
+            <a href="#" class="btn btn-warning">Add to cart</a>
+            <button class="btn btn-success" data-toggle="modal" data-target="#mouseModal">Know
+              More</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal with Carousel -->
+      <div class="modal fade" id="mouseModal" data-backdrop="static">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header bg-warning text-dark">
+              <h5 class="modal-title" id="electronics2">Wireless Keyboard</h5>
+            </div>
+
+            <div class="modal-body scrollable">
+              <!-- Carousel inside Modal -->
+              <div id="Celectronics4" class="carousel slide mb-3 carousel-fade" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#Celectronics4" data-slide-to="0" class="active"></li>
+                  <li data-target="#Celectronics4" data-slide-to="1"></li>
+                  <li data-target="#Celectronics4" data-slide-to="2"></li>
+                </ol>
+
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-interval="3000">
+                    <img src="./assests/electronics2.jpg" class="d-block w-100 rounded" width="400px" height="350px">
+                  </div>
+                  <div class="carousel-item" data-interval="3000">
+                    <img src="./assests/keyboard2.jpg" class="d-block w-100 rounded" width="400px" height="350px">
+                  </div>
+                  <div class="carousel-item" data-interval="3000">
+                    <img src="./assests/keyboard2.webp" class="d-block w-100 rounded" width="400px" height="350px">
+                  </div>
+                </div>
+
+                <a class="carousel-control-prev" href="#Celectronics4" data-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#Celectronics4" data-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+
+              <!-- Product Details -->
+              <div class="text-center">
+                <p>Enjoy seamless typing with this ergonomic Bluetooth keyboard featuring a rechargeable battery, fast
+                  pairing, and silent keys. Perfect for work or travel.</p>
+                <hr>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt impedit magnam ipsum quisquam
+                  soluta commodi. Nihil sequi exercitationem hic fugiat natus amet illo iusto? Culpa impedit
+                  consectetur, iusto magni veniam incidunt atque ullam molestias ex, amet voluptatum obcaecati fugiat
+                  dolorum velit sit hic! Minus nihil quibusdam nulla! Incidunt, doloremque aliquam.
+                </p>
+              </div>
+            </div>
+            <!-- Modal-footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 5 -->
+       <div class="card mb-3" style="width: 18rem;">
+        <img src="./assests/electronics5.jpg" class="card-img-top" alt="Wireless Keyboard" height="200">
+        <div class="card-body">
+          <h5 class="card-title">Bluetooth Headphones</h5>
+                    <h6 class="card-text text-success">&#8377;2,199</h6>
+                    <p class="card-text">Immersive sound with deep bass, long battery life, and noise cancellation
+                        feature.</p>
+          <div class="btn-grp">
+            <a href="#" class="btn btn-warning">Add to cart</a>
+            <button class="btn btn-success" data-toggle="modal" data-target="#headphoneModal">Know
+              More</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal with Carousel -->
+      <div class="modal fade" id="headphoneModal" data-backdrop="static">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header bg-warning text-dark">
+              <h5 class="modal-title" id="electronics2">Wireless Keyboard</h5>
+            </div>
+
+            <div class="modal-body scrollable">
+              <!-- Carousel inside Modal -->
+              <div id="Celectronics5" class="carousel slide mb-3 carousel-fade" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#Celectronics5" data-slide-to="0" class="active"></li>
+                  <li data-target="#Celectronics5" data-slide-to="1"></li>
+                  <li data-target="#Celectronics5" data-slide-to="2"></li>
+                </ol>
+
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-interval="3000">
+                    <img src="./assests/electronics2.jpg" class="d-block w-100 rounded" width="400px" height="350px">
+                  </div>
+                  <div class="carousel-item" data-interval="3000">
+                    <img src="./assests/keyboard2.jpg" class="d-block w-100 rounded" width="400px" height="350px">
+                  </div>
+                  <div class="carousel-item" data-interval="3000">
+                    <img src="./assests/keyboard2.webp" class="d-block w-100 rounded" width="400px" height="350px">
+                  </div>
+                </div>
+
+                <a class="carousel-control-prev" href="#Celectronics5" data-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#Celectronics5" data-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+
+              <!-- Product Details -->
+              <div class="text-center">
+                <p>Immersive sound with deep bass, long battery life, and noise cancellation
+                        feature. Perfect for work or travel.</p>
+                <hr>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt impedit magnam ipsum quisquam
+                  soluta commodi. Nihil sequi exercitationem hic fugiat natus amet illo iusto? Culpa impedit
+                  consectetur, iusto magni veniam incidunt atque ullam molestias ex, amet voluptatum obcaecati fugiat
+                  dolorum velit sit hic! Minus nihil quibusdam nulla! Incidunt, doloremque aliquam.
+                </p>
+              </div>
+            </div>
+            <!-- Modal-footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Fashion -->
+  <div id="fashion" class="bg-dark py-3">
+    <h1 class="text-center text-light">Fashion</h1>
+    <section class="d-flex justify-content-between flex-wrap mx-3 pb-3 text-dark">
+      <div class="card mb-3" style="width: 18rem;">
+        <img src="./assests/fashion1.jpg" class="card-img-top" alt="Sweater Set" height="200">
+        <div class="card-body">
+          <h5 class="card-title">Sweater Set</h5>
+          <h6 class="card-text text-success">&#8377;1,799</h6>
+          <p class="card-text">Soft woolen sweater with matching scarf, perfect for cozy winter days.</p>
+          <div class="btn-grp">
+            <a href="#" class="btn btn-warning">Add to cart</a>
+            <button class="btn btn-success" data-toggle="modal" data-target="#keyboardModal">Know
+              More</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3" style="width: 18rem;">
+        <img src="./assests/fashion2.jpg" class="card-img-top" alt="Casual Outfit" height="200">
+        <div class="card-body">
+          <h5 class="card-title">Casual Outfit</h5>
+          <h6 class="card-text text-success">&#8377;2,499</h6>
+          <p class="card-text">Stylish denim jacket and jeans combo for everyday comfort and trend.</p>
+          <div class="btn-grp">
+            <a href="#" class="btn btn-warning">Add to cart</a>
+            <button class="btn btn-success" data-toggle="modal" data-target="#keyboardModal">Know
+              More</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3" style="width: 18rem;">
+        <img src="./assests/fashion3.jpg" class="card-img-top" alt="Fedora Display" height="200">
+        <div class="card-body">
+          <h5 class="card-title">Fedora Display</h5>
+          <h6 class="card-text text-success">&#8377;999</h6>
+          <p class="card-text">Classic fedora hat with timeless design, adds elegance to your outfit.</p>
+          <div class="btn-grp">
+            <a href="#" class="btn btn-warning">Add to cart</a>
+            <button class="btn btn-success" data-toggle="modal" data-target="#keyboardModal">Know
+              More</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3" style="width: 18rem;">
+        <img src="./assests/fashion4.jpg" class="card-img-top" alt="Streetwear Essentials" height="200">
+        <div class="card-body">
+          <h5 class="card-title">Streetwear Essentials</h5>
+          <h6 class="card-text text-success">&#8377;1,599</h6>
+          <p class="card-text">Trendy streetwear set featuring oversized tee, joggers, and sneakers.</p>
+          <div class="btn-grp">
+            <a href="#" class="btn btn-warning">Add to cart</a>
+            <button class="btn btn-success" data-toggle="modal" data-target="#keyboardModal">Know
+              More</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3" style="width: 18rem;">
+        <img src="./assests/fashion5.jpg" class="card-img-top" alt="Travel Kit" height="200">
+        <div class="card-body">
+          <h5 class="card-title">Travel Kit</h5>
+          <h6 class="card-text text-success">&#8377;1,299</h6>
+          <p class="card-text">Compact travel bag set with toiletries organizer and passport holder.</p>
+          <div class="btn-grp">
+            <a href="#" class="btn btn-warning">Add to cart</a>
+            <button class="btn btn-success" data-toggle="modal" data-target="#keyboardModal">Know
+              More</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Lifestyle -->
+  <div id="lifestyle" class="bg-light py-3">
+    <h1 class="text-center text-dark">Lifestyle</h1>
+    <section class="d-flex justify-content-between flex-wrap mx-3 pb-3">
+      <div class="card mb-3" style="width: 18rem;">
+        <img src="./assests/lifestyle1.webp" class="card-img-top" alt="Luxury Skincare" height="200">
+        <div class="card-body">
+          <h5 class="card-title">Luxury Skincare</h5>
+          <h6 class="card-text text-success">&#8377;2,999</h6>
+          <p class="card-text">Premium skincare kit enriched with vitamin C, collagen, and essential oils.</p>
+          <div class="btn-grp">
+            <a href="#" class="btn btn-warning">Add to cart</a>
+            <button class="btn btn-success" data-toggle="modal" data-target="#keyboardModal">Know
+              More</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3" style="width: 18rem;">
+        <img src="./assests/lifestyle2.avif" class="card-img-top" alt="SPA Essential" height="200">
+        <div class="card-body">
+          <h5 class="card-title">SPA Essential</h5>
+          <h6 class="card-text text-success">&#8377;1,899</h6>
+          <p class="card-text">Relaxing spa set with aromatic candles, oils, and herbal bath salts.</p>
+          <div class="btn-grp">
+            <a href="#" class="btn btn-warning">Add to cart</a>
+            <button class="btn btn-success" data-toggle="modal" data-target="#keyboardModal">Know
+              More</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3" style="width: 18rem;">
+        <img src="./assests/lifestyle3.jpeg" class="card-img-top" alt="Gym Gear" height="200">
+        <div class="card-body">
+          <h5 class="card-title">Gym Gear</h5>
+          <h6 class="card-text text-success">&#8377;3,499</h6>
+          <p class="card-text">Durable fitness gear including gloves, mat, and resistance bands.</p>
+          <div class="btn-grp">
+            <a href="#" class="btn btn-warning">Add to cart</a>
+            <button class="btn btn-success" data-toggle="modal" data-target="#keyboardModal">Know
+              More</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3" style="width: 18rem;">
+        <img src="./assests/lifestyle4.webp" class="card-img-top" alt="Luxury Accessories" height="200">
+        <div class="card-body">
+          <h5 class="card-title">Luxury Accessories</h5>
+          <h6 class="card-text text-success">&#8377;2,499</h6>
+          <p class="card-text">Elegant watch and bracelet combo to complete your sophisticated look.</p>
+          <div class="btn-grp">
+            <a href="#" class="btn btn-warning">Add to cart</a>
+            <button class="btn btn-success" data-toggle="modal" data-target="#keyboardModal">Know
+              More</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3" style="width: 18rem;">
+        <img src="./assests/lifestyle5.jpg" class="card-img-top" alt="Travel Bags" height="200">
+        <div class="card-body">
+          <h5 class="card-title">Travel Bags</h5>
+          <h6 class="card-text text-success">&#8377;1,999</h6>
+          <p class="card-text">Spacious and stylish travel bag made of premium waterproof fabric.</p>
+          <div class="btn-grp">
+            <a href="#" class="btn btn-warning">Add to cart</a>
+            <button class="btn btn-success" data-toggle="modal" data-target="#keyboardModal">Know
+              More</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Healthcare -->
+  <div id="healthcare" class="bg-dark py-3">
+    <h1 class="text-center text-light">Healthcare</h1>
+    <section class="d-flex justify-content-between flex-wrap mx-3 pb-3 text-dark">
+      <div class="card mb-3" style="width: 18rem;">
+        <img src="./assests/healthcare1.jpg" class="card-img-top" alt="Skin Care" height="200">
+        <div class="card-body">
+          <h5 class="card-title">Skin Care</h5>
+          <h6 class="card-text text-success">&#8377;1,499</h6>
+          <p class="card-text">Gentle skin care range for daily hydration and nourishment with natural extracts.</p>
+          <div class="btn-grp">
+            <a href="#" class="btn btn-warning">Add to cart</a>
+            <button class="btn btn-success" data-toggle="modal" data-target="#keyboardModal">Know
+              More</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3" style="width: 18rem;">
+        <img src="./assests/healthcare2.jpg" class="card-img-top" alt="Organic Snacks" height="200">
+        <div class="card-body">
+          <h5 class="card-title">Organic Snacks</h5>
+          <h6 class="card-text text-success">&#8377;899</h6>
+          <p class="card-text">Healthy, organic, and gluten-free snacks made from 100% natural ingredients.</p>
+          <div class="btn-grp">
+            <a href="#" class="btn btn-warning">Add to cart</a>
+            <button class="btn btn-success" data-toggle="modal" data-target="#keyboardModal">Know
+              More</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3" style="width: 18rem;">
+        <img src="./assests/healthcare3.webp" class="card-img-top" alt="Pharma Support" height="200">
+        <div class="card-body">
+          <h5 class="card-title">Pharma Support</h5>
+          <h6 class="card-text text-success">&#8377;2,299</h6>
+          <p class="card-text">Essential pharmaceutical care and supplements for daily health management.</p>
+          <div class="btn-grp">
+            <a href="#" class="btn btn-warning">Add to cart</a>
+            <button class="btn btn-success" data-toggle="modal" data-target="#keyboardModal">Know
+              More</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3" style="width: 18rem;">
+        <img src="./assests/healthcare4.jpg" class="card-img-top" alt="Hair Care" height="200">
+        <div class="card-body">
+          <h5 class="card-title">Hair Care</h5>
+          <h6 class="card-text text-success">&#8377;1,799</h6>
+          <p class="card-text">Natural shampoo and serum combo for smooth, strong, and shiny hair.</p>
+          <div class="btn-grp">
+            <a href="#" class="btn btn-warning">Add to cart</a>
+            <button class="btn btn-success" data-toggle="modal" data-target="#keyboardModal">Know
+              More</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3" style="width: 18rem;">
+        <img src="./assests/healthcare5.jpg" class="card-img-top" alt="Wellness Care" height="200">
+        <div class="card-body">
+          <h5 class="card-title">Wellness Care</h5>
+          <h6 class="card-text text-success">&#8377;2,499</h6>
+          <p class="card-text">Complete wellness kit with herbal supplements, oils, and immunity boosters.</p>
+          <div class="btn-grp">
+            <a href="#" class="btn btn-warning">Add to cart</a>
+            <button class="btn btn-success" data-toggle="modal" data-target="#keyboardModal">Know
+              More</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-light text-dark text-center py-3">
+    <p class="mb-0">&copy; 2025 SHOPIO. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
